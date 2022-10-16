@@ -1,0 +1,47 @@
+$main-color:rgb(172, 209, 241);
+$hover-color:rgb(130, 165, 196);
+.task-bar{
+    border-radius: 0px 5px 5px 0px;
+    height: 80vh;
+    padding-top: 2px;
+    display: block;
+    margin-top: 20px;
+    align-self:baseline;
+    width: 10vw;
+    background-color: $main-color;
+}
+
+.task-bar ul{
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+    
+}
+.task-bar ul li{
+    text-align: center;
+    font-size: 30px;
+    width: 90%;
+    margin: 5% auto 5% auto;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+.task-bar ul li:hover{
+    background-color: $hover-color ;
+}
+.task-bar ul li a{
+    text-decoration: none;
+}
+.task-bar ul li a:visited{
+    color: inherit;
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .task-bar{
+        width: 20vw;
+    }
+    .task-bar ul li{
+        font-size: 25px;
+    }
+}

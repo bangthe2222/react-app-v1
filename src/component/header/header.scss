@@ -1,0 +1,45 @@
+$main-color: rgb(101, 178, 246);
+$hover-color:rgb(130, 165, 196,);
+.header{
+    width: 98vw;
+    background-color: $main-color;
+    display: flex;
+    font-size: 30px;
+    padding: 1vw;
+    border-radius: 0px 0px 10px 10px;
+}
+#item{
+    margin: 10px;
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+#item:hover{
+    background-color:$hover-color; 
+}
+#home-icon{
+    font-size: 65px;
+}
+#header-task{    
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+ul>li>a{
+    text-decoration: none;
+}
+
+ul>li>a:visited{
+    color: inherit ;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .header{
+        font-size: 25px;
+    }
+}
