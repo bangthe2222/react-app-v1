@@ -6,7 +6,10 @@ function MainBody() {
         <>
             <div className='_main'>
                 <TaskBar></TaskBar>
+                <div id='outlet-main'>
                 <Outlet></Outlet>
+                </div>
+                
             </div>
         </>
 
