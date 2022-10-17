@@ -1,6 +1,7 @@
 import './App.css';
 import exportedObject from './component';
 import { createBrowserRouter} from 'react-router-dom';
+
 const  Main = () => {
   return(
     <>
@@ -23,6 +24,16 @@ const App = createBrowserRouter([
       {
         element : <exportedObject.Contact></exportedObject.Contact>,
         path : '/contact'
+      },
+      {
+        element : <exportedObject.About></exportedObject.About>,
+        path : '/about',
+        children : [
+          {
+            index : true,
+            element : <exportedObject.NoPage></exportedObject.NoPage>
+          }
+        ]
       },
       {
         element : <exportedObject.MainBody></exportedObject.MainBody>,
