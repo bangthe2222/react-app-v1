@@ -23,7 +23,7 @@ const ChatBot = () => {
     const [userText, changeUserText ] = useState();
 
     async function useGetText(text) {
-            axios.post('https://chatbot-1uck.onrender.com/chatbot', 
+            axios.post('https://chatbot-47b6.onrender.com/chatbot', 
             {
             text : text
             },
