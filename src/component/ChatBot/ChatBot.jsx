@@ -37,7 +37,6 @@ const ChatBot = () => {
         .then(function (response) {
             return Promise.resolve(response.data['data'])
         }).then(function (result) {
-            console.log(chatBoxData)
             changeChatBox([
                 ...chatBoxData,
                 {
@@ -46,10 +45,8 @@ const ChatBot = () => {
                     chatbot : result
                 }
             ])
-            console.log(result)
             window.setTimeout(()=>{
                 let boxChat = document.getElementById('box-chat');
-                console.log(boxChat.scrollHeight)
                 boxChat.scrollTop = boxChat.scrollHeight;
             }, 1)
         })
